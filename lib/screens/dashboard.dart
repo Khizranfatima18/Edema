@@ -1,9 +1,9 @@
-import 'package:edemadetection/screens/detail_screen.dart/aboutUs.dart';
-import 'package:edemadetection/screens/detail_screen.dart/doctors.dart';
-import 'package:edemadetection/screens/detail_screen.dart/edema.dart';
-import 'package:edemadetection/screens/detail_screen.dart/feedback.dart';
-import 'package:edemadetection/screens/detail_screen.dart/result.dart';
-import 'package:edemadetection/screens/detail_screen.dart/upload_image.dart';
+import 'package:edemadetection/screens/detail_screen/aboutUs.dart';
+import 'package:edemadetection/screens/detail_screen/doctors.dart';
+import 'package:edemadetection/screens/detail_screen/edema.dart';
+import 'package:edemadetection/screens/detail_screen/feedback.dart';
+import 'package:edemadetection/screens/detail_screen/result.dart';
+import 'package:edemadetection/screens/detail_screen/upload_image.dart';
 import 'package:edemadetection/screens/login.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -219,7 +219,8 @@ class GridDashboard extends StatelessWidget {
 
   void _navigateToScreen(BuildContext context, Items data) {
     final Map<Items, Widget> screenMap = {
-      item1: Screen1(data),
+      // item1: Screen1(data),
+      item1: Screen2(data),
       item2: Screen2(data),
       item3: Screen3(data),
       item4: Screen4(data),
